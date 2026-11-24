@@ -1,0 +1,9 @@
+# Backups automáticos do Blender
+*.blend1
+*.blend2
+# Arquivos temporários do Roblox Studio e do Excel
+*.rbxl.lock
+*.rbxlx.lock
+~$*
+# Python
+__pycache__/

@@ -42,8 +42,33 @@ python balanceamento/build_balance.py balanceamento/rift-tamers-balanceamento.xl
 
 O script grava só as fórmulas. Os valores aparecem quando a planilha é aberta no Excel ou recalculada no LibreOffice.
 
-## Ferramentas previstas
+## Organização das pastas
+
+```text
+docs/            o GDD (resumo, HLD e LLD)
+balanceamento/   a planilha e o script que a gera
+blender/         arquivos .blend, um por modelo
+  parceiros/       os 3 monstros iniciais
+  bosses/          os 12 bosses e os secretos
+  inimigos/        inimigos comuns e elites
+  toca/            vaga, cofre, fonte, pedestal e afins
+  cenario/         kits modulares (bosque/, dunas/)
+  referencias/     imagens de referência e paleta
+export/          o que sai do Blender para o Studio
+  fbx/             modelos e animações exportados
+  texturas/        atlas e texturas
+roblox/
+  places/          o arquivo do jogo (.rbxl)
+  src/             os scripts, na mesma estrutura do Studio
+vfx/             referências e predefinições do plugin de VFX
+audio/           efeitos sonoros (sfx/) e músicas (musica/)
+ui/              ícones e telas
+```
+
+Nomes de arquivo em minúsculas e com hífen, iguais aos do Bestiário (por exemplo `blender/bosses/ent-ancestral.blend` e `export/fbx/ent-ancestral.fbx`).
+
+## Ferramentas
 
 - **Blender + MCP:** modelos e animações low poly.
 - **Roblox Studio + MCP:** scripts, montagem dos mapas e playtests.
-- **Plugin de VFX do Roblox:** efeitos de habilidade, captura e raridade.
+- **Plugin VFX Studio do Roblox:** efeitos de habilidade, captura e raridade.
